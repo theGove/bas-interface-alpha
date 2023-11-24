@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="interface.css">
+    <link id="google-fonts" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <script src="interface.js"></script>
+    <title>Document</title>
+</head>
+<body onload="test_menu()">
+    <div id="message-center"></div>
+    <div id="page-container">        
+        <div id="menu-container">
+            <div id="prior-page-button" onclick="turn_page('prior',event)" title="Prior Page"><span class="material-symbols-outlined button" id="next-page-icon" >navigate_before</span></div>
+            <div id="content-menu">
+                <div id="menu-0" onclick="load_menu(0)" class="active"> Introduction</div><div id="menu-1" onclick="load_menu(1)" > Lessons</div><div id="menu-2" onclick="load_menu(2)"> Practice</div><div id="menu-3" onclick="load_menu(3)"> Tools</div>
+            </div>
+            <div id="tools-menu">
+                <div id="user-login-button" onclick="show_user_menu(event)" title="Show user Settings"><span class="material-symbols-outlined button" id="user-login-icon">person</span></div><div id="table-of-contents-button" onclick="show_toc(event)" title="Table of Contents"><span class="material-symbols-outlined button" id="table-of-contents-icon">menu_book</span></div><div id="next-page-button" onclick="turn_page('next',event)"  title="Next Page"><span class="material-symbols-outlined button" id="next-page-icon">navigate_next</span></div>
+            </div>
+            
+            
+
+        </div>
+        howdy<br>howdy<br>howdy<br>howdy<br>howdy<br></div>
+</body>
+</html>
