@@ -16,6 +16,7 @@ body{
 
 #menu-container{
     color:whitesmoke;
+    height:30px;
 }
 
 
@@ -89,3 +90,10 @@ body{
     width:30px;
     text-align: center;
 }
+
+#table-of-contents{
+    transition:height .2s ease-out;
+    height:0;
+    overflow:hidden;
+}
+

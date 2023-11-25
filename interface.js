@@ -17,10 +17,17 @@ function add_item(){
 
 function turn_page(direction, evt){
     console.log(direction, evt)
+    document.getElementById('slider').classList.remove('closed');
 }
 
 function show_toc(evt){
   console.log("showing toc", evt)
+  
+  if(tag("table-of-contents").style.height===tag("table-of-contents").scrollHeight + "px"){
+    tag("table-of-contents").style.height = "0px"
+  }else{
+    tag("table-of-contents").style.height = tag("table-of-contents").scrollHeight + "px"
+  }
 }
 
 function show_user_menu(evt){
