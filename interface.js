@@ -30,6 +30,12 @@ function show_toc(evt){
   }
 }
 
-function show_user_menu(evt){
+async function show_user_menu(evt){
   console.log("showing user menu", evt)
+
+  console.log("testing API request")
+  response=await get_page("content/junk7.html", "https://basis-dev.blogspot.com/")
+  //response=await api_request({a:"from blog"}, "https://basis-dev.blogspot.com/?api")
+  console.log(response)
+  
 }
